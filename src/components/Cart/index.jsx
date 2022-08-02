@@ -1,7 +1,7 @@
 import CartProduct from "../CartProduct";
 import { useState } from "react";
 
-function Cart({ filteredProducts }) {
+function Cart({ filteredProducts, setFilteredProducts }) {
   return (
     <div>
       <header>
@@ -12,6 +12,8 @@ function Cart({ filteredProducts }) {
           <CartProduct
             key={filteredProduct.id}
             filteredProduct={filteredProduct}
+            filteredProducts={filteredProducts}
+            setFilteredProducts={setFilteredProducts}
           ></CartProduct>
         ))}
       </ul>

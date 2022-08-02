@@ -28,7 +28,7 @@ function App() {
       setFilteredProducts([...filteredProducts, ...arrayFiltered]);
     }
   }
-  /* console.log(filteredProducts); */
+
   return (
     <div>
       <Header></Header>
@@ -36,7 +36,11 @@ function App() {
         products={products}
         addProductToCart={addProductToCart}
       ></ProductsList>
-      <Cart products={products} filteredProducts={filteredProducts}></Cart>
+      <Cart
+        products={products}
+        filteredProducts={filteredProducts}
+        setFilteredProducts={setFilteredProducts}
+      ></Cart>
     </div>
   );
 }
