@@ -1,6 +1,6 @@
 import Product from "../Product";
-import Cart from "../Cart";
-function ProductsList({ products }) {
+
+function ProductsList({ products, addProductToCart }) {
   return (
     <>
       <ul>
@@ -8,7 +8,7 @@ function ProductsList({ products }) {
           <Product
             key={product.id}
             product={product}
-            products={products}
+            addProductToCart={addProductToCart}
           ></Product>
         ))}
       </ul>

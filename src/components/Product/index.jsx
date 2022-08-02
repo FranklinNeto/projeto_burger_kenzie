@@ -1,11 +1,9 @@
-import { useState } from "react";
-
-function Product({ products, product }) {
-  const [filteredProducts, setFilteredProducts] = useState([]);
+function Product({ product, addProductToCart }) {
+  /*  const [filteredProducts, setFilteredProducts] = useState([]);
 
   function addProductToCart(productId) {
     setFilteredProducts(products.filter((product) => (product.id = productId)));
-  }
+  } */
 
   return (
     <li>

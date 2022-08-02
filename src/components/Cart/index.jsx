@@ -1,19 +1,20 @@
 import CartProduct from "../CartProduct";
 import { useState } from "react";
 
-function Cart({ products }) {
-  /*  const [filteredProducts, setFilteredProducts] = useState([]);
-
-  const addProductToCart = (productId) => {
-    setFilteredProducts(products.filter((product) => (product.id = productId)));
-  }; */
-
+function Cart({ filteredProducts }) {
   return (
     <div>
       <header>
         <h2>Carrinho de Compras</h2>
       </header>
-      <ul className="cartSpace"></ul>
+      <ul className="cartSpace">
+        {filteredProducts.map((filteredProduct) => (
+          <CartProduct
+            key={filteredProduct.id}
+            filteredProduct={filteredProduct}
+          ></CartProduct>
+        ))}
+      </ul>
     </div>
   );
 }

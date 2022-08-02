@@ -1,13 +1,13 @@
-function CartProduct() {
+function CartProduct({ filteredProduct }) {
   return (
     <li>
       <figure>
-        <img alt="" />
+        <img alt="" src={filteredProduct.img} />
       </figure>
 
       <div className="card-product--descricao">
-        <h2></h2>
-        <p></p>
+        <h2>{filteredProduct.name}</h2>
+        <p>{filteredProduct.category}</p>
       </div>
       <button>Remover</button>
     </li>
