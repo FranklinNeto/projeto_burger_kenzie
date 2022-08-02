@@ -1,4 +1,5 @@
 import CartProduct from "../CartProduct";
+import CartTotal from "../CartTotal";
 import { useState } from "react";
 
 function Cart({ filteredProducts, setFilteredProducts }) {
@@ -17,6 +18,7 @@ function Cart({ filteredProducts, setFilteredProducts }) {
           ></CartProduct>
         ))}
       </ul>
+      <CartTotal filteredProducts={filteredProducts}></CartTotal>
     </div>
   );
 }
