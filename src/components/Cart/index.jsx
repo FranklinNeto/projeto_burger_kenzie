@@ -1,25 +1,25 @@
 import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
 
-function Cart({ filteredProducts, setFilteredProducts }) {
+function Cart({ cartProducts, setCartProducts }) {
   return (
     <div>
       <header>
         <h2>Carrinho de Compras</h2>
       </header>
       <ul className="cartSpace">
-        {filteredProducts.map((filteredProduct) => (
+        {cartProducts.map((cartProduct) => (
           <CartProduct
-            key={filteredProduct.id}
-            filteredProduct={filteredProduct}
-            filteredProducts={filteredProducts}
-            setFilteredProducts={setFilteredProducts}
+            key={cartProduct.id}
+            cartProduct={cartProduct}
+            cartProducts={cartProducts}
+            setCartProducts={setCartProducts}
           ></CartProduct>
         ))}
       </ul>
       <CartTotal
-        filteredProducts={filteredProducts}
-        setFilteredProducts={setFilteredProducts}
+        cartProducts={cartProducts}
+        setCartProducts={setCartProducts}
       ></CartTotal>
     </div>
   );

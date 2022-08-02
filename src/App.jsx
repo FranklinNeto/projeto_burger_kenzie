@@ -7,7 +7,7 @@ import Cart from "./components/Cart";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [cartProducts, setCartProducts] = useState([]);
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
@@ -21,11 +21,11 @@ function App() {
       (product) => product.id === productId
     );
 
-    const idFound = filteredProducts.find(
+    const idFound = cartProducts.find(
       (element) => element.id === arrayFiltered[0].id
     );
     if (idFound === undefined) {
-      setFilteredProducts([...filteredProducts, ...arrayFiltered]);
+      setCartProducts([...cartProducts, ...arrayFiltered]);
     }
   }
 
@@ -38,8 +38,8 @@ function App() {
       ></ProductsList>
       <Cart
         products={products}
-        filteredProducts={filteredProducts}
-        setFilteredProducts={setFilteredProducts}
+        cartProducts={cartProducts}
+        setCartProducts={setCartProducts}
       ></Cart>
     </div>
   );

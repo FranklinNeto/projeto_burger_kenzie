@@ -1,25 +1,19 @@
-function CartProduct({
-  filteredProduct,
-  filteredProducts,
-  setFilteredProducts,
-}) {
+function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
   function removeProductToCart(productId) {
-    setFilteredProducts(
-      filteredProducts.filter((element) => element.id !== productId)
-    );
+    setCartProducts(cartProducts.filter((element) => element.id !== productId));
   }
 
   return (
     <li>
       <figure>
-        <img alt="" src={filteredProduct.img} />
+        <img alt="" src={cartProduct.img} />
       </figure>
 
       <div className="card-product--descricao">
-        <h2>{filteredProduct.name}</h2>
-        <p>{filteredProduct.category}</p>
+        <h2>{cartProduct.name}</h2>
+        <p>{cartProduct.category}</p>
       </div>
-      <button onClick={() => removeProductToCart(filteredProduct.id)}>
+      <button onClick={() => removeProductToCart(cartProduct.id)}>
         Remover
       </button>
     </li>

@@ -1,10 +1,4 @@
 function Product({ product, addProductToCart }) {
-  /*  const [filteredProducts, setFilteredProducts] = useState([]);
-
-  function addProductToCart(productId) {
-    setFilteredProducts(products.filter((product) => (product.id = productId)));
-  } */
-
   return (
     <li>
       <img alt="" src={product.img} />
