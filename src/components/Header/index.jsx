@@ -3,7 +3,7 @@ function Header() {
     <header>
       <img className="logo" alt="" />
       <div>
-        <input placeholder="DigitarPesquisa"></input>
+        <input placeholder="Digitar Pesquisa"></input>
         <button>Pesquisar</button>
       </div>
     </header>
