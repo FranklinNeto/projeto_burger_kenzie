@@ -1,3 +1,5 @@
+import { ContainerCartTotal } from "./styles";
+
 function CartTotal({ cartProducts, setCartProducts }) {
   const totalPrice = cartProducts.reduce((accumulator, currentValue) => {
     return accumulator + currentValue.price;
@@ -7,13 +9,15 @@ function CartTotal({ cartProducts, setCartProducts }) {
     setCartProducts([]);
   }
   return (
-    <div>
+    <ContainerCartTotal>
       <div>
         <h2>Total:</h2>
         <p>R$ {totalPrice}</p>
       </div>
-      <button onClick={() => removeAll()}>Remover Todos</button>
-    </div>
+      <div>
+        <button onClick={() => removeAll()}>Remover Todos</button>
+      </div>
+    </ContainerCartTotal>
   );
 }
 

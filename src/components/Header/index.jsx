@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ContainerHeader } from "./styles";
+import { Button } from "../Button/styles";
 
 function Header({ products, setProducts }) {
   const [inputSearch, setInputSearch] = useState("");
@@ -18,8 +20,12 @@ function Header({ products, setProducts }) {
   }
 
   return (
-    <header>
-      <img className="logo" alt="" />
+    <ContainerHeader>
+      <div>
+        <h1>Burger</h1>
+        <h2>Kenzie</h2>
+      </div>
+
       <div>
         <input
           value={inputSearch}
@@ -28,14 +34,14 @@ function Header({ products, setProducts }) {
             setInputSearch(event.target.value);
           }}
         ></input>
-        <button
+        <Button
           type="button"
           onClick={(event) => searchProducts(event.preventDefault())}
         >
           Pesquisar
-        </button>
+        </Button>
       </div>
-    </header>
+    </ContainerHeader>
   );
 }
 export default Header;

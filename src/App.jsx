@@ -18,15 +18,15 @@ function App() {
   }, []);
 
   function addProductToCart(productId) {
-    const arrayFiltered = products.filter(
+    const arrayProductSelected = products.filter(
       (product) => product.id === productId
     );
 
     const idFound = cartProducts.find(
-      (element) => element.id === arrayFiltered[0].id
+      (element) => element.id === arrayProductSelected[0].id
     );
     if (idFound === undefined) {
-      setCartProducts([...cartProducts, ...arrayFiltered]);
+      setCartProducts([...cartProducts, ...arrayProductSelected]);
     }
   }
 
