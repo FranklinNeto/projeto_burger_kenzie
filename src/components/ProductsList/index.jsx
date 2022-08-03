@@ -3,7 +3,7 @@ import Product from "../Product";
 function ProductsList({ products, addProductToCart }) {
   return (
     <>
-      <ul>
+      <ul className="listaDeProdutos">
         {products.map((product) => (
           <Product
             key={product.id}

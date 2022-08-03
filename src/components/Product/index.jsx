@@ -1,6 +1,6 @@
 function Product({ product, addProductToCart }) {
   return (
-    <li>
+    <li className="cardProduct">
       <img alt="" src={product.img} />
       <h2>{product.name}</h2>
       <span>{product.category}</span>

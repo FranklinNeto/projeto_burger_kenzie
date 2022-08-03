@@ -1,5 +1,6 @@
 /* import logo from './logo.svg'; */
 import "./App.css";
+import "./reset.css";
 import { useState, useEffect } from "react";
 import ProductsList from "./components/ProductsList";
 import Header from "./components/Header";
@@ -31,16 +32,20 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      <ProductsList
-        products={products}
-        addProductToCart={addProductToCart}
-      ></ProductsList>
-      <Cart
-        products={products}
-        cartProducts={cartProducts}
-        setCartProducts={setCartProducts}
-      ></Cart>
+      <Header products={products} setProducts={setProducts}></Header>
+      <div className="tudoMenosOHeader">
+        <div>
+          <ProductsList
+            products={products}
+            addProductToCart={addProductToCart}
+          ></ProductsList>
+        </div>
+        <Cart
+          products={products}
+          cartProducts={cartProducts}
+          setCartProducts={setCartProducts}
+        ></Cart>
+      </div>
     </div>
   );
 }

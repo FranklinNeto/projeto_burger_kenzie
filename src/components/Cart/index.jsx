@@ -1,9 +1,10 @@
 import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
+import { Container } from "./styles";
 
 function Cart({ cartProducts, setCartProducts }) {
   return (
-    <div>
+    <Container>
       <header>
         <h2>Carrinho de Compras</h2>
       </header>
@@ -21,7 +22,7 @@ function Cart({ cartProducts, setCartProducts }) {
         cartProducts={cartProducts}
         setCartProducts={setCartProducts}
       ></CartTotal>
-    </div>
+    </Container>
   );
 }
 
