@@ -48,10 +48,10 @@ export const LiCardProduct = styled.li`
 
   button {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
 
     margin-top: 5px;
-    margin-right: 10px;
+    margin-right: 12px;
 
     background-color: #f5f5f5;
     color: #bdbdbd;

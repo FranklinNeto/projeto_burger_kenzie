@@ -35,7 +35,7 @@ export const ContainerHeader = styled.header`
     background-color: #ffffff;
     height: 60px;
     width: 365px;
-    margin-right: 1rem;
+    margin-right: 115px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
 

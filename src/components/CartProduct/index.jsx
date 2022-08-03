@@ -7,7 +7,7 @@ function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
 
   return (
     <LiCardProduct>
-      <div>
+      <div className="card-product--img--descricao">
         <figure>
           <img alt="" src={cartProduct.img} />
         </figure>

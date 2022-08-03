@@ -1,19 +1,22 @@
 .tudoMenosOHeader {
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  gap: 10px;
 
   /*  background-color: blue; */
 }
 
 .listaDeProdutos {
-  width: 50vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  /* background-color: aqua;*/
 }
 
 .cardProduct {
@@ -26,8 +29,8 @@
   border-radius: 5px;
   box-sizing: border-box;
 }
-
+/* 
 .mainCardImage {
   width: 200px;
   height: 200px;
-}
+} */
