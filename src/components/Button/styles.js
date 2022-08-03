@@ -9,6 +9,7 @@ export const Button = styled.button`
   border: 2px solid #27ae60;
   border-radius: 8px;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 
   &:hover {
     background-color: #93d7af;

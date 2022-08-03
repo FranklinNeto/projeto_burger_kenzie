@@ -34,6 +34,7 @@ export const LiCardProduct = styled.li`
       h2 {
         font-weight: 700;
         font-size: 14px;
+        font-family: "Inter", sans-serif;
         color: #333333;
         width: 170px;
         margin-top: 10px;
@@ -41,6 +42,7 @@ export const LiCardProduct = styled.li`
       p {
         font-weight: 400;
         font-size: 12px;
+        font-family: "Inter", sans-serif;
         color: #828282;
       }
     }
@@ -49,6 +51,7 @@ export const LiCardProduct = styled.li`
   button {
     font-weight: 500;
     font-size: 12px;
+    font-family: "Inter", sans-serif;
 
     margin-top: 5px;
     margin-right: 12px;

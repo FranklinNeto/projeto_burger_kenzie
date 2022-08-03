@@ -47,6 +47,8 @@ export const LiMainCardProduct = styled.li`
       margin-top: 28px;
       font-weight: 700;
       font-size: 18px;
+      font-family: "Inter", sans-serif;
+
       color: #333333;
       margin-left: 22px;
     }
@@ -55,12 +57,14 @@ export const LiMainCardProduct = styled.li`
       margin-left: 21px;
       font-weight: 400;
       font-size: 12px;
+      font-family: "Inter", sans-serif;
       color: #828282;
     }
     p {
       margin-left: 21px;
       font-weight: 600;
       font-size: 14px;
+      font-family: "Inter", sans-serif;
       color: #27ae60;
     }
 

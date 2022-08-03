@@ -12,6 +12,7 @@ export const ContainerCartTotal = styled.div`
     h2 {
       font-weight: 600;
       font-size: 14px;
+      font-family: "Inter", sans-serif;
       color: #333333;
       margin-left: 10px;
     }
@@ -19,6 +20,7 @@ export const ContainerCartTotal = styled.div`
     p {
       font-weight: 600;
       font-size: 14px;
+      font-family: "Inter", sans-serif;
       color: #828282;
       margin-right: 10px;
     }
@@ -34,6 +36,7 @@ export const ContainerCartTotal = styled.div`
 
       font-weight: 600;
       font-size: 16px;
+      font-family: "Inter", sans-serif;
       border: 2px solid #e0e0e0;
       border-radius: 8px;
 

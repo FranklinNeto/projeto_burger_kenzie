@@ -21,11 +21,13 @@ export const ContainerHeader = styled.header`
       color: #333333;
       font-size: 40px;
       font-weight: 700;
+      font-family: "Inter", sans-serif;
     }
     h2 {
       font-size: 25px;
       color: #eb5757;
       font-weight: 700;
+      font-family: "Inter", sans-serif;
     }
   }
   & div + div {

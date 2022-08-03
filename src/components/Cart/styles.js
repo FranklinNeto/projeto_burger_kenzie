@@ -21,6 +21,7 @@ export const Container = styled.div`
 
     font-size: 18px;
     font-weight: 700;
+    font-family: "Inter", sans-serif;
 
     border-radius: 5px 5px 0px 0px;
 
