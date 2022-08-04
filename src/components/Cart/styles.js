@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   /* justify-content: space-between; */
   /* background-color: #f5f5; */
-  background: #f5f5f5;
+  background: #ffff;
 
   margin-right: 117px;
 
@@ -35,6 +35,6 @@ export const Container = styled.div`
   }
 
   ul {
-    /*  background-color: red; */
+    background: #f5f5f5;
   }
 `;

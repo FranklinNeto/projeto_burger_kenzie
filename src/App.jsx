@@ -43,8 +43,7 @@ function App() {
       }
     }
   }
-  console.log(products);
-  console.log(cartProducts);
+
   return (
     <div>
       <Header products={products} setProducts={setProducts}></Header>

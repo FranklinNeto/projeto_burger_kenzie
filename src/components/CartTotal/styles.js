@@ -4,6 +4,7 @@ export const ContainerCartTotal = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background: #f5f5f5;
 
   div {
     display: flex;

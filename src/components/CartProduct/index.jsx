@@ -2,7 +2,20 @@ import { LiCardProduct } from "./styles";
 
 function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
   function removeProductFromCart(productId) {
-    setCartProducts(cartProducts.filter((element) => element.id !== productId));
+    const arrayProductToBeDeleted = cartProducts.filter(
+      (product) => product.id === productId
+    );
+
+    if (arrayProductToBeDeleted[0].quantityCart > 1) {
+      arrayProductToBeDeleted[0].quantityCart -= 1;
+      setCartProducts([...cartProducts]);
+    } else {
+      arrayProductToBeDeleted[0].isInTheCart = false;
+      arrayProductToBeDeleted[0].quantityCart = 0;
+      setCartProducts(
+        cartProducts.filter((element) => element.id !== productId)
+      );
+    }
   }
 
   return (

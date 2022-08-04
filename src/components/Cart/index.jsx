@@ -2,7 +2,7 @@ import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
 import { Container } from "./styles";
 
-function Cart({ cartProducts, setCartProducts }) {
+function Cart({ cartProducts, setCartProducts, product, setProducts }) {
   return (
     <Container>
       <div>

@@ -45,6 +45,13 @@ export const LiCardProduct = styled.li`
         font-family: "Inter", sans-serif;
         color: #828282;
       }
+
+      span {
+        font-weight: 700;
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+        color: #333333;
+      }
     }
   }
 
