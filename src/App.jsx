@@ -29,14 +29,22 @@ function App() {
       (product) => product.id === productId
     );
 
-    const idFound = cartProducts.find(
-      (element) => element.id === arrayProductSelected[0].id
-    );
-    if (idFound === undefined) {
+    if (arrayProductSelected[0].isInTheCart === false) {
+      arrayProductSelected[0].isInTheCart = true;
+      arrayProductSelected[0].quantityCart += 1;
+
       setCartProducts([...cartProducts, ...arrayProductSelected]);
+    } else {
+      for (let i = 0; i < cartProducts.length; i++) {
+        if (cartProducts[i].id === productId) {
+          cartProducts[i].quantityCart += 1;
+          setCartProducts([...cartProducts]);
+        }
+      }
     }
   }
-
+  console.log(products);
+  console.log(cartProducts);
   return (
     <div>
       <Header products={products} setProducts={setProducts}></Header>
