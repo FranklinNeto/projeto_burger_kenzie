@@ -9,6 +9,8 @@ export const Container = styled.div`
   /* background-color: #f5f5; */
   background: #f5f5f5;
 
+  margin-right: 117px;
+
   header {
     display: flex;
     justify-content: flex-start;

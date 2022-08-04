@@ -15,6 +15,7 @@ function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
         <div className="card-product--descricao">
           <h2>{cartProduct.name}</h2>
           <p>{cartProduct.category}</p>
+          <span>Quantidade: {cartProduct.quantityCart}</span>
         </div>
       </div>
       <button onClick={() => removeProductFromCart(cartProduct.id)}>

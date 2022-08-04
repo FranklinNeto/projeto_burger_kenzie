@@ -13,7 +13,14 @@ function App() {
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
       .then((res) => res.json())
-      .then((res) => setProducts(res))
+      .then((res) => {
+        res.map((element) => {
+          element.isInTheCart = false;
+          element.quantityCart = 0;
+          return element;
+        });
+        setProducts(res);
+      })
       .catch((err) => console.log(err));
   }, []);
 

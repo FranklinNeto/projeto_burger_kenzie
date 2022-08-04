@@ -37,7 +37,7 @@ export const ContainerHeader = styled.header`
     background-color: #ffffff;
     height: 60px;
     width: 365px;
-    margin-right: 115px;
+    margin-right: 85px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
 
@@ -45,8 +45,10 @@ export const ContainerHeader = styled.header`
       height: 100%;
       border: none;
       border-radius: 8px;
+      padding: 0 0 0 15px;
+
       &::placeholder {
-        margin-left: 15px;
+        font-family: "Inter", sans-serif;
       }
     }
     button {

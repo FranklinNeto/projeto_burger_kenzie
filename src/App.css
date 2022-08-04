@@ -4,13 +4,13 @@
   justify-content: space-around;
   margin-top: 2rem;
 
-  gap: 10px;
+  gap: 5px;
 
   /*  background-color: blue; */
 }
 
 .listaDeProdutos {
-  width: 70vw;
+  width: 940px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
