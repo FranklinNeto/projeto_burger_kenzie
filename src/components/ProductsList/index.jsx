@@ -10,7 +10,7 @@ function ProductsList({
 }) {
   return (
     <ContainerProductList>
-      {filteredProducts.length !== 0 && (
+      {Array.isArray(filteredProducts) && (
         <section>
           <h2 className="searchResults">
             Resultados para: <span>{inputSearch}</span>
@@ -18,21 +18,27 @@ function ProductsList({
         </section>
       )}
       <ul>
-        {filteredProducts.length !== 0
-          ? filteredProducts.map((filteredProduct) => (
+        {Array.isArray(filteredProducts) ? (
+          filteredProducts.length > 0 ? (
+            filteredProducts.map((filteredProduct) => (
               <ProductFiltered
                 key={filteredProduct.id}
                 filteredProduct={filteredProduct}
                 addProductToCart={addProductToCart}
               ></ProductFiltered>
             ))
-          : products.map((product) => (
-              <Product
-                key={product.id}
-                product={product}
-                addProductToCart={addProductToCart}
-              ></Product>
-            ))}
+          ) : (
+            <h1>Não encontrados</h1>
+          )
+        ) : (
+          products.map((product) => (
+            <Product
+              key={product.id}
+              product={product}
+              addProductToCart={addProductToCart}
+            ></Product>
+          ))
+        )}
       </ul>
     </ContainerProductList>
   );

@@ -33,6 +33,14 @@ export const ContainerProductList = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    > h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      color: #333333;
+    }
   }
 
   @media (max-width: 1050px) {
