@@ -17,6 +17,13 @@ export const LiMainCardProduct = styled.li`
   min-width: 221px;
   height: 346px;
 
+  @media (max-width: 680px) {
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 346px;
+  }
+
   figure {
     display: flex;
     justify-content: center;

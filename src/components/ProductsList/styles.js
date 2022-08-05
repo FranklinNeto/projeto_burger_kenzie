@@ -11,4 +11,11 @@ export const ContainerProductList = styled.ul`
   @media (max-width: 1050px) {
     width: 100%;
   }
+
+  @media (max-width: 680px) {
+    flex-wrap: nowrap;
+    width: 90vw;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
 `;

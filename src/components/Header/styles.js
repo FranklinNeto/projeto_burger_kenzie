@@ -4,9 +4,18 @@ export const ContainerHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 80px;
   background-color: #f5f5f5;
   /* background-color: blue; */
+
+  @media (max-width: 685px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    height: 139px;
+    width: 100vw;
+  }
 
   div {
     display: flex;
@@ -16,6 +25,9 @@ export const ContainerHeader = styled.header`
     width: 160px;
     height: 36px;
     margin-left: 100px;
+    @media (max-width: 685px) {
+      width: 70vw;
+    }
 
     h1 {
       color: #333333;
@@ -41,8 +53,14 @@ export const ContainerHeader = styled.header`
     border: 2px solid #e0e0e0;
     border-radius: 8px;
 
+    @media (max-width: 685px) {
+      width: 80vw;
+      margin: 0;
+    }
+
     input {
       height: 100%;
+      width: 100%;
       border: none;
       border-radius: 8px;
       padding: 0 0 0 15px;

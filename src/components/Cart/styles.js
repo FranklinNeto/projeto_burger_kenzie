@@ -16,6 +16,15 @@ export const Container = styled.div`
     margin: 20px;
   }
 
+  @media (max-width: 685px) {
+    max-width: 95vw;
+    min-width: 95vw;
+
+    width: 95vw;
+
+    /* margin-right: 10px; */
+  }
+
   header {
     display: flex;
     justify-content: flex-start;
@@ -32,7 +41,9 @@ export const Container = styled.div`
 
     border-radius: 5px 5px 0px 0px;
 
-    /*  margin-bottom: 20px; */
+    @media (max-width: 1050px) {
+      justify-content: center;
+    }
 
     h2 {
       margin-left: 20px;
@@ -49,6 +60,7 @@ export const Container = styled.div`
       border-radius: 0px 0px 10px 10px;
 
       height: 10rem;
+      overflow: auto;
 
       h2 {
         color: #333333;

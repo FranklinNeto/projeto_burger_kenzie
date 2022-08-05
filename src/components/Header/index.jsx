@@ -7,10 +7,11 @@ function Header({ products, setProducts }) {
 
   function searchProducts() {
     const textValue = inputSearch.trim().toLowerCase();
+    const productsOriginals = [...products];
 
     if (textValue !== "") {
       setProducts(
-        products.filter(
+        productsOriginals.filter(
           (product) =>
             product.name.toLowerCase().includes(textValue) ||
             product.category.toLowerCase().includes(textValue)

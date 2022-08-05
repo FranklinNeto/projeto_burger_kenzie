@@ -31,6 +31,7 @@ function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
           <span>Quantidade: {cartProduct.quantityCart}</span>
         </div>
       </div>
+
       <button onClick={() => removeProductFromCart(cartProduct.id)}>
         Remover
       </button>
