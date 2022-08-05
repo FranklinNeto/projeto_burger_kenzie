@@ -11,15 +11,20 @@ export const LiCardProduct = styled.li`
   padding-top: 1rem;
   padding-bottom: 1rem;
 
-  @media (max-width: 390px) {
+  @media (max-width: 680px) {
     width: 95%;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
 
   div {
     display: flex;
     gap: 10px;
     /*  background-color: red; */
+
+    @media (max-width: 680px) {
+      /*  background-color: blue; */
+      width: 60%;
+    }
 
     figure {
       background: #e0e0e0;
@@ -85,6 +90,10 @@ export const LiCardProduct = styled.li`
 
     &:hover {
       color: #828282;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 14px;
     }
   }
 `;

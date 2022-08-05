@@ -1,5 +1,4 @@
-import "./App.css";
-import "./reset.css";
+import Global from "./styles/global";
 import { useState, useEffect } from "react";
 import ProductsList from "./components/ProductsList";
 import Header from "./components/Header";
@@ -46,6 +45,7 @@ function App() {
 
   return (
     <div>
+      <Global />
       <Header products={products} setProducts={setProducts}></Header>
       <MainContainer>
         <div>
