@@ -2,21 +2,27 @@ import { useState } from "react";
 import { ContainerHeader } from "./styles";
 import { Button } from "../Button/styles";
 
-function Header({ products, setProducts }) {
+function Header({
+  products,
+  setProducts,
+  filteredProducts,
+  setFilteredProducts,
+}) {
   const [inputSearch, setInputSearch] = useState("");
 
   function searchProducts() {
     const textValue = inputSearch.trim().toLowerCase();
-    const productsOriginals = [...products];
 
     if (textValue !== "") {
-      setProducts(
-        productsOriginals.filter(
+      setFilteredProducts(
+        products.filter(
           (product) =>
             product.name.toLowerCase().includes(textValue) ||
             product.category.toLowerCase().includes(textValue)
         )
       );
+    } else {
+      setFilteredProducts("");
     }
   }
 

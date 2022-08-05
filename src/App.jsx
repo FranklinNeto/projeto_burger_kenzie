@@ -8,6 +8,7 @@ import { MainContainer } from "./components/MainContainer/styles";
 function App() {
   const [products, setProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState("");
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
@@ -46,12 +47,19 @@ function App() {
   return (
     <div>
       <Global />
-      <Header products={products} setProducts={setProducts}></Header>
+      <Header
+        products={products}
+        setProducts={setProducts}
+        filteredProducts={filteredProducts}
+        setFilteredProducts={setFilteredProducts}
+      ></Header>
       <MainContainer>
         <div>
           <ProductsList
             products={products}
             addProductToCart={addProductToCart}
+            filteredProducts={filteredProducts}
+            setFilteredProducts={setFilteredProducts}
           ></ProductsList>
         </div>
         {/* <div> */}
