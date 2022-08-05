@@ -10,7 +10,7 @@ function Product({ product, addProductToCart }) {
       <div>
         <h2>{product.name}</h2>
         <span>{product.category}</span>
-        <p>R$ {product.price}</p>
+        <p>R$ {product.price.toFixed(2)}</p>
         <Button onClick={() => addProductToCart(product.id)}>Adicionar</Button>
       </div>
     </LiMainCardProduct>

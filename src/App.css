@@ -1,23 +1,23 @@
-.tudoMenosOHeader {
+/* .tudoMenosOHeader {
   width: 100vw;
   display: flex;
-  justify-content: space-around;
+   justify-content: center; 
   margin-top: 2rem;
 
   gap: 0;
 
-  /*  background-color: blue; */
-}
-
+   background-color: blue; 
+} */
+/* 
 .listaDeProdutos {
-  width: 940px;
+  width: 65vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* background-color: aqua;*/
-}
+   background-color: aqua;
+} */
 
 /* .cardProduct {
   display: flex;

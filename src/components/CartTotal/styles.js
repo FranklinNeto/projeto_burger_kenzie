@@ -5,6 +5,8 @@ export const ContainerCartTotal = styled.div`
   flex-direction: column;
   gap: 10px;
   background: #f5f5f5;
+  padding-top: 1.5rem;
+  border-top: solid 3px #e0e0e0;
 
   div {
     display: flex;
@@ -45,6 +47,9 @@ export const ContainerCartTotal = styled.div`
       height: 60px;
 
       cursor: pointer;
+
+      margin-top: 22px;
+      margin-bottom: 20px;
     }
 
     button:hover {

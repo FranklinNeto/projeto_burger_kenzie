@@ -19,14 +19,14 @@ export const ContainerHeader = styled.header`
 
     h1 {
       color: #333333;
-      font-size: 40px;
-      font-weight: 700;
+      font-size: 30px;
+      font-weight: 1000;
       font-family: "Inter", sans-serif;
     }
     h2 {
-      font-size: 25px;
+      font-size: 20px;
       color: #eb5757;
-      font-weight: 700;
+      font-weight: 1000;
       font-family: "Inter", sans-serif;
     }
   }
@@ -37,7 +37,7 @@ export const ContainerHeader = styled.header`
     background-color: #ffffff;
     height: 60px;
     width: 365px;
-    margin-right: 85px;
+    margin-right: 5%;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
 

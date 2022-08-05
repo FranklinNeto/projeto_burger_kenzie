@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* background-color: red; */
   width: 365px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* background-color: #f5f5; */
+
   background: #ffff;
 
-  margin-right: 117px;
+  margin-right: 3%;
+
+  @media (max-width: 1050px) {
+    max-width: 915px;
+    min-width: 680px;
+    width: 92%;
+    margin: 20px;
+  }
 
   header {
     display: flex;
@@ -27,7 +32,7 @@ export const Container = styled.div`
 
     border-radius: 5px 5px 0px 0px;
 
-    margin-bottom: 20px;
+    /*  margin-bottom: 20px; */
 
     h2 {
       margin-left: 20px;
@@ -36,5 +41,32 @@ export const Container = styled.div`
 
   ul {
     background: #f5f5f5;
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 0px 0px 10px 10px;
+
+      height: 10rem;
+
+      h2 {
+        color: #333333;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      p {
+        color: #828282;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
   }
 `;

@@ -16,7 +16,7 @@ function CartTotal({ cartProducts, setCartProducts }) {
     <ContainerCartTotal>
       <div>
         <h2>Total:</h2>
-        <p>R$ {totalPrice}</p>
+        <p>R$ {totalPrice.toFixed(2)}</p>
       </div>
       <div>
         <button onClick={() => removeAll()}>Remover Todos</button>

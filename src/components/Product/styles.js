@@ -5,15 +5,16 @@ export const LiMainCardProduct = styled.li`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: grey;
+
   margin: 0.2rem;
   border-radius: 5px;
   box-sizing: border-box;
 
   border: 2px solid #e0e0e0;
   border-radius: 5px;
-
-  width: 300px;
+  width: 30%;
+  max-width: 300px;
+  min-width: 221px;
   height: 346px;
 
   figure {
@@ -34,7 +35,7 @@ export const LiMainCardProduct = styled.li`
     background-color: red;
     background-color: #ffff;
     width: 100%;
-    height: 196px;
+    height: 190px;
 
     border-radius: 0 0 5px 5px;
     /* border: 2px solid #e0e0e0; */

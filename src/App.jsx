@@ -1,10 +1,10 @@
-/* import logo from './logo.svg'; */
 import "./App.css";
 import "./reset.css";
 import { useState, useEffect } from "react";
 import ProductsList from "./components/ProductsList";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
+import { MainContainer } from "./components/MainContainer/styles";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -47,26 +47,23 @@ function App() {
   return (
     <div>
       <Header products={products} setProducts={setProducts}></Header>
-      <div className="tudoMenosOHeader">
+      <MainContainer>
         <div>
           <ProductsList
             products={products}
             addProductToCart={addProductToCart}
           ></ProductsList>
         </div>
+        {/* <div> */}
         <Cart
           products={products}
           cartProducts={cartProducts}
           setCartProducts={setCartProducts}
         ></Cart>
-      </div>
+        {/*  </div> */}
+      </MainContainer>
     </div>
   );
 }
 
 export default App;
-
-/* const showProducts = () => {};
-  const handleClick = (productId) => {
-    return productId;
-  }; */

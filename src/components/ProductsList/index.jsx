@@ -1,9 +1,10 @@
 import Product from "../Product";
+import { ContainerProductList } from "./styles";
 
 function ProductsList({ products, addProductToCart }) {
   return (
     <>
-      <ul className="listaDeProdutos">
+      <ContainerProductList /* className="listaDeProdutos" */>
         {products.map((product) => (
           <Product
             key={product.id}
@@ -11,7 +12,7 @@ function ProductsList({ products, addProductToCart }) {
             addProductToCart={addProductToCart}
           ></Product>
         ))}
-      </ul>
+      </ContainerProductList>
     </>
   );
 }
