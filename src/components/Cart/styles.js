@@ -9,6 +9,10 @@ export const Container = styled.div`
 
   margin-right: 3%;
 
+  @media (min-width: 1200px) {
+    width: 90%;
+  }
+
   @media (max-width: 1050px) {
     max-width: 915px;
     min-width: 680px;

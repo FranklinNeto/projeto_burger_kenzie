@@ -9,6 +9,7 @@ function App() {
   const [products, setProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState("");
+  const [inputSearch, setInputSearch] = useState("");
 
   useEffect(() => {
     fetch("https://hamburgueria-kenzie-json-serve.herokuapp.com/products")
@@ -49,9 +50,9 @@ function App() {
       <Global />
       <Header
         products={products}
-        setProducts={setProducts}
-        filteredProducts={filteredProducts}
         setFilteredProducts={setFilteredProducts}
+        inputSearch={inputSearch}
+        setInputSearch={setInputSearch}
       ></Header>
       <MainContainer>
         <div>
@@ -60,6 +61,8 @@ function App() {
             addProductToCart={addProductToCart}
             filteredProducts={filteredProducts}
             setFilteredProducts={setFilteredProducts}
+            inputSearch={inputSearch}
+            setInputSearch={setInputSearch}
           ></ProductsList>
         </div>
         {/* <div> */}

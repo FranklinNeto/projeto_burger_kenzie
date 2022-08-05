@@ -4,12 +4,10 @@ import { Button } from "../Button/styles";
 
 function Header({
   products,
-  setProducts,
-  filteredProducts,
   setFilteredProducts,
+  inputSearch,
+  setInputSearch,
 }) {
-  const [inputSearch, setInputSearch] = useState("");
-
   function searchProducts() {
     const textValue = inputSearch.trim().toLowerCase();
 
