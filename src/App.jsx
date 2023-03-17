@@ -44,7 +44,7 @@ function App() {
       }
     }
   }
-  console.log(filteredProducts);
+
   return (
     <div>
       <Global />
