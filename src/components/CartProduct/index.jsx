@@ -1,4 +1,5 @@
 import { LiCardProduct } from "./styles";
+import { motion } from "framer-motion";
 
 function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
   function removeProductFromCart(productId) {
@@ -19,23 +20,32 @@ function CartProduct({ cartProduct, cartProducts, setCartProducts }) {
   }
 
   return (
-    <LiCardProduct>
-      <div className="card-product--img--descricao">
-        <figure>
-          <img alt="" src={cartProduct.img} />
-        </figure>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <LiCardProduct>
+          <div className="card-product--img--descricao">
+            <figure>
+              <img alt="" src={cartProduct.img} />
+            </figure>
 
-        <div className="card-product--descricao">
-          <h2>{cartProduct.name}</h2>
-          <p>{cartProduct.category}</p>
-          <span>Quantidade: {cartProduct.quantityCart}</span>
-        </div>
-      </div>
+            <div className="card-product--descricao">
+              <h2>{cartProduct.name}</h2>
+              <p>{cartProduct.category}</p>
+              <span>Quantidade: {cartProduct.quantityCart}</span>
+            </div>
+          </div>
 
-      <button onClick={() => removeProductFromCart(cartProduct.id)}>
-        Remover
-      </button>
-    </LiCardProduct>
+          <button onClick={() => removeProductFromCart(cartProduct.id)}>
+            Remover
+          </button>
+        </LiCardProduct>
+      </motion.div>
+    </>
   );
 }
 
