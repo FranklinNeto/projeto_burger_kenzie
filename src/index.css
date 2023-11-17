@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+::-webkit-scrollbar {
+  /*  display: none; */
+  width: 10px; /* Largura da barra de rolagem */
+  height: 7px;
+}
+
+/* Estilo para o polegar da barra de rolagem (a parte deslizante) */
+::-webkit-scrollbar-thumb {
+  background: #27ae60; /* Cor do polegar */
+  border-radius: 6px; /* Borda arredondada do polegar */
+}
+
+/* Estilo para o canto da barra de rolagem */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Cor de fundo do canto */
+}
+
+/* Estilo para o rastreador da barra de rolagem (a área cinza) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo do rastreador */
+}

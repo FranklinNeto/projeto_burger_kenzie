@@ -34,7 +34,7 @@ export const Container = styled.div`
     justify-content: flex-start;
     align-items: center;
 
-    background-color: #27ae60;
+    background-color: #27ae60; 
     color: #ffff;
 
     height: 65px;
