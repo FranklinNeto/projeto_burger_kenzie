@@ -4,7 +4,7 @@ import ProductsList from "./components/ProductsList";
 import Header from "./components/Header";
 import Cart from "./components/Cart";
 import { MainContainer } from "./components/MainContainer/styles";
-
+//teste
 function App() {
   const [products, setProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
